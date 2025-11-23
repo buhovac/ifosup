@@ -15,8 +15,7 @@ Déployer le serveur sur une machine virtuelle avec réseau
 virtuel (pas d’accès par pont, utiliser une mv “cliente”.)
 
 Réseau : 
-Configurer une adresse IP fixe pour garantir l’accessibilité
-permanente du serveur.
+Configurer une adresse IP fixe pour garantir l’accessibilité permanente du serveur.
 
 Stockage : 
 Mettre en place un système de disques offrant :
@@ -31,13 +30,13 @@ Permettre la gestion du serveur à distance via :
 • Ligne de commande sécurisée ;
 • Interface web légère ;
 
-Serveur web Déployer plusieurs protocoles de partage compatibles avec
-différents systèmes d’exploitation (Windows, Linux) ainsi qu’un
+Serveur web Déployer plusieurs protocoles de partage compatibles avec différents systèmes d’exploitation (Windows, Linux) ainsi qu’un
 protocole de partage de fichiers distant.
 
 Gestion des utilisateurs et permissions
 Créer les comptes utilisateurs suivants avec leurs droits respectifs :
 Espaces de partages
+
 Configurer trois espaces de partage distincts :
 
 1. Public : Accessible en lecture/écriture localement, lecture seule à
