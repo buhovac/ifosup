@@ -42,8 +42,8 @@ def print_matrix(matrix, is_float=False):
 
 
 def main():
-    rows = int(input("Saisissez le nombre de lignes.: "))
-    cols = int(input("Saisissez le nombre de colonnes.: "))
+    rows = int(input("Saisissez le nombre de lignes: "))
+    cols = int(input("Saisissez le nombre de colonnes: "))
 
     int_matrix = create_random_int_matrix(rows, cols, min_val=0, max_val=9)
     float_matrix = create_random_float_matrix(rows, cols, min_val=0.0, max_val=10.0)
