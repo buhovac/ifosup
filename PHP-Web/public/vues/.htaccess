@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{ENV:REDIRECT_STATUS} ^$
+    RewriteRule ^ma-page-(401|403|404)-perso\.php$ - [R=404,L]
+</IfModule>

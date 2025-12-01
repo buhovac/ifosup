@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Zone protégée"
+AuthUserFile "/var/www/html/public/private/.htpasswd"
+Require valid-user
