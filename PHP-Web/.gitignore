@@ -1,0 +1,22 @@
+# ignoriraj sve po defaultu
+/*
+
+# ali zadrži ova pravila (negacije):
+!.gitignore
+!README.md
+
+# jedino što želimo versionirati je public/
+!public/
+public/*
+
+# unutar public/ uključi sve (ponovno “odvuci” negaciju)
+!public/**
+
+# korisno za macOS i IDE-e (ako baš završe u public/)
+.DS_Store
+.idea/
+.vscode/
+
+# u slučaju da koristiš ove alate u public/
+node_modules/
+vendor/
