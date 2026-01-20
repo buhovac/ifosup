@@ -11,7 +11,6 @@ def convolution(image, kernel):
     pad_h = kh // 2
     pad_w = kw // 2
 
-    # kopija radi “rubovi se kopiraju”
     result = [row[:] for row in image]
 
     for i in range(pad_h, h - pad_h):
@@ -25,21 +24,17 @@ def convolution(image, kernel):
     return result
 
 def main():
-    # 1) ucitaj i pripremi 512x512 grayscale
-    img = Image.open("images/4-2-03-BW.png").convert("L").resize((512, 512))
+    img = Image.open("images/Lenna512.png").convert("L").resize((512, 512))
     image = np.array(img, dtype=float).tolist()
 
-    # 2) gauss kernel 3x3
     kernel_gauss = [
         [1/16, 2/16, 1/16],
         [2/16, 4/16, 2/16],
         [1/16, 2/16, 1/16]
     ]
 
-    # 3) primijeni filter
     blurred = convolution(image, kernel_gauss)
 
-    # 4) spremi rezultat
     out = np.clip(np.array(blurred), 0, 255).astype("uint8")
     Image.fromarray(out).save("blur_gauss_3x3.png")
 
