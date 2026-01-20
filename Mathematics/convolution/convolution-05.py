@@ -3,11 +3,6 @@ import numpy as np
 import os
 
 def convolve_manual(image, kernel):
-    """
-    image: 2D numpy array (float)
-    kernel: 2D numpy array (float), npr. (1,9) za horizontal blur
-    Bords: kopiramo (kao u kursu) -> ostaju originalni.
-    """
     H, W = image.shape
     kh, kw = kernel.shape
 
@@ -27,19 +22,15 @@ def convolve_manual(image, kernel):
     return out
 
 def main():
-    # 1) Putanja do slike u images/
-    input_path = os.path.join("images", "image.png")  # promijeni ime ako treba
+    input_path = os.path.join("images", "Lenna512.png")
 
     img = Image.open(input_path).convert("L").resize((512, 512))
     image = np.array(img, dtype=np.float32)
 
-    # 2) Directional blur (horizontal) kernel 1x9
     kernel = np.ones((1, 9), dtype=np.float32) / 9.0
 
-    # 3) primijeni
     blurred = convolve_manual(image, kernel)
 
-    # 4) spremi
     out_path = os.path.join("images", "blur_directionnel_LR_1x9.png")
     Image.fromarray(np.clip(blurred, 0, 255).astype(np.uint8)).save(out_path)
 
