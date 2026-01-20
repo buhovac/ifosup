@@ -14,7 +14,6 @@ def convolution(image, kernel):
 
             result[ligne][col] = somme
 
-    # kopiranje rubova
     for i in range(nb_lignes):
         result[i][0] = image[i][0]
         result[i][nb_colonnes - 1] = image[i][nb_colonnes - 1]
