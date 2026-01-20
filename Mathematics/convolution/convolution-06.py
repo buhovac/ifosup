@@ -3,11 +3,6 @@ import numpy as np
 import os
 
 def median_filter_manual(image, k=3):
-    """
-    image: 2D numpy array float
-    k: veličina prozora (mora biti neparna: 3,5,7...)
-    Rubovi: kopirani (kao u kursu)
-    """
     if k % 2 == 0:
         raise ValueError("k doit être impair (3,5,7,...)")
 
@@ -24,7 +19,7 @@ def median_filter_manual(image, k=3):
     return out
 
 def main():
-    input_path = os.path.join("images", "image.png")  # promijeni ime po potrebi
+    input_path = os.path.join("images", "Lenna512.png")
     img = Image.open(input_path).convert("L").resize((512, 512))
     image = np.array(img, dtype=np.float32)
 

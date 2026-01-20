@@ -4,11 +4,6 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 def intensity_profile(image, x0, y0, x1, y1, n=500):
-    """
-    image : 2D numpy array (grayscale)
-    (x0,y0) -> (x1,y1) : linija
-    n : broj uzoraka
-    """
     xs = np.linspace(x0, x1, n)
     ys = np.linspace(y0, y1, n)
 
@@ -21,17 +16,15 @@ def intensity_profile(image, x0, y0, x1, y1, n=500):
     return profile
 
 def main():
-    img_path = os.path.join("images", "image.png")
+    img_path = os.path.join("images", "Lenna512.png")
     img = Image.open(img_path).convert("L")
     image = np.array(img, dtype=np.float32)
 
-    # linija (primjer)
     x0, y0 = 50, 100
     x1, y1 = 450, 350
 
     profile = intensity_profile(image, x0, y0, x1, y1)
 
-    # prikaz slike + linije
     plt.figure(figsize=(12, 5))
 
     plt.subplot(1, 2, 1)
@@ -40,7 +33,6 @@ def main():
     plt.title("Image + ligne de mesure")
     plt.axis("off")
 
-    # profil
     plt.subplot(1, 2, 2)
     plt.plot(profile)
     plt.title("Profil d'intensité")
