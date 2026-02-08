@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JS: Manipuler le contenu textuel du DOM - Série 01</title>
+</head>
+<body>
+<h1>JS: Manipuler le contenu textuel du DOM - Série 01</h1>
+
+<!-- Exo 01 -->
+<section>
+    <h2>01. textContent</h2>
+    <p>
+        Scénario : basculer l'état d'un contenu publié.
+    </p>
+    <p id="exo01-statut">Statut : Brouillon</p>
+    <button id="exo01-btn-toggle">Publier</button>
+</section>
+
+<!-- Exo 02 -->
+<section>
+    <h2>02. innerText et texte visible</h2>
+    <p>
+        Scénario : générer un résumé tel qu'il est <b>visible</b> à l'écran, sans inclure une note interne masquée.
+    </p>
+    <div class="carte">
+        <p id="exo02-texte">
+            Bonjour <b>Client</b>,
+            <br>
+            Votre demande a été prise en charge.
+            <span class="texte-cache">NOTE INTERNE: Ne pas afficher au client.</span>
+        </p>
+        <button id="exo02-btn-toggle">Générer le résumé visible</button>
+        <h3>Sortie</h3>
+        <pre id="exo02-sortie" class="zone-sortie">(vide)</pre>
+    </div>
+</section>
+
+<!-- Exo 03 -->
+<section>
+    <h2>03. innerHTML et gabarit fiable</h2>
+    <p>
+        Scénario : afficher une bannière d'information depuis un gabarit connu et maîtrisé.
+    </p>
+    <div id="exo03-zone" class="zone-message">
+        (Aucun message pour le moment)
+    </div>
+    <button id="exo03-btn-toggle">Afficher le message</button>
+</section>
+
+<!-- Exo 04 -->
+<section>
+    <h2>04. innerHTML et perte des événements</h2>
+
+    <p>
+        Scénario : rafraîchir une carte via <span class="commande" role="text">innerHTML</span> et observer la perte d'interactivité.
+    </p>
+    <div id="exo04-carte" class="carte">
+        <p><b>Produit</b>: Clavier mécanique</p>
+        <p>Disponibilité : <span id="exo04-etat">En stock</span></p>
+        <p>Dernière mise à jour : <span id="exo04-maj">Aucune</span></p>
+        <button id="exo04-btn-switch">Basculer disponibilité</button>
+    </div>
+    <hr>
+    <button id="exo04-btn-refresh">Rafraîchir la carte (innerHTML)</button>
+    <button id="exo04-btn-reset">Réinitialiser</button>
+</section>
+
+<!-- Exo 05 -->
+<section>
+    <h2>05. Bonne pratique, modifier uniquement les textes</h2>
+    <p>
+        Scénario : rafraîchir les informations sans reconstruire tout le conteneur, afin de conserver les événements.
+    </p>
+    <div id="exo05-carte" class="carte">
+        <p><b>Produit</b>: Clavier mécanique</p>
+        <p>Disponibilité : <span id="exo05-etat">En stock</span></p>
+        <p>Dernière mise à jour : <span id="exo05-maj">Aucune</span></p>
+
+        <button id="exo05-btn-switch">Basculer disponibilité</button>
+    </div>
+    <hr>
+    <button id="exo05-btn-refresh">Rafraîchir les textes de la carte (textContent)</button>
+</section>
+
+<!-- Exo 06 -->
+<section>
+    <h2>06. innerHTML vs textContent et simulation XSS</h2>
+    <p>
+        Scénario : afficher une note "utilisateur" dans une zone.
+        Comparer l'affichage avec <span class="commande" role="text">textContent</span> puis avec <span class="commande" role="text">innerHTML</span>.
+    </p>
+    <div id="exo06-zone" class="zone-message">
+        (Aucune note pour le moment)
+    </div>
+    <button id="exo06-btn-textcontent">Afficher avec textContent (sûr)</button>
+    <button id="exo06-btn-innerhtml">Afficher avec innerHTML (dangereux)</button>
+    <button id="exo06-btn-reset">Réinitialiser</button>
+</section>
+
+<script src="./js/app.js" type="module"></script>
+</body>
+</html>

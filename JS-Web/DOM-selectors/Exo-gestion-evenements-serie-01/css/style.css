@@ -1,0 +1,16 @@
+form {
+    max-width: 300px;
+    width: 100%;
+}
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.field-group--inline {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}

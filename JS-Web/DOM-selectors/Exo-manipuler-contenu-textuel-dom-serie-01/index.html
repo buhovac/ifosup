@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JS: Exo Gestionnaire d'Événements Série 01</title>
+</head>
+<body>
+<h1>JS: Exo Gestionnaire d'Événements Série 01</h1>
+
+<!-- Exo 01 -->
+<section>
+    <h2>01. Le Clic Simple</h2>
+    <button id="btn-clic">Cliquez-moi</button>
+</section>
+
+<!-- Exo 02 -->
+<section>
+    <h2>02. La Souris et l'Objet Event</h2>
+    <div id="zone-souris" class="zone-survol">
+        Survolez-moi avec la souris !
+    </div>
+</section>
+
+<!-- Exo 03 -->
+<section>
+    <h2>03. Le Clavier</h2>
+    <label for="champ-clavier">Saisissez du texte : </label>
+    <input type="text" id="champ-clavier" placeholder="Tapez ici...">
+</section>
+
+<!-- Exo 04 -->
+<section>
+    <h2>04. Comportement par défaut</h2>
+    <a href="https://www.google.com" id="lien-interdit">Ne pas aller sur Google</a>
+</section>
+
+
+<!-- Exo 05 -->
+<section>
+    <h2>05. Arguments</h2>
+    <button class="js-btn-param">Utilisateur A</button>
+    <button class="js-btn-param">Utilisateur B</button>
+</section>
+
+<!-- Exo 06 -->
+<section>
+    <h2>06. Ajouter/Supprimer un écouteur</h2>
+    <p>Utilisez les boutons de contrôle pour modifier le comportement du bouton de test ci-dessous.</p>
+
+    <!-- Bouton Cible (C'est lui qui va recevoir l'événement) -->
+    <button id="btn-test">Bouton Test (Inactif au départ)</button>
+
+    <hr>
+
+    <!-- Boutons de contrôle -->
+    <button id="btn-activer">Activer l'écouteur</button>
+    <button id="btn-desactiver">Supprimer l'écouteur</button>
+</section>
+
+<script src="./js/app.js" type="module"></script>
+</body>
+</html>

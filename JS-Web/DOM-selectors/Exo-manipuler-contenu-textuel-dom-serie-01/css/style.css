@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    line-height: 1.5;
+}
+section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+h2 {
+    margin-top: 0;
+}
+.zone-survol
+{
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    cursor: crosshair;
+    border: 2px dashed #999;
+    margin-top: 10px;
+}
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
