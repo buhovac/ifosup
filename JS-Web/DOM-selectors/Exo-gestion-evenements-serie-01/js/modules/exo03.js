@@ -1,8 +1,9 @@
-export const execExo13 = () =>
-{
-    console.log("----- Exo 13 -----");
+export const execExo03 = () => {
+    console.log('----- Exo 03 -----');
 
-    const champsTexteElements = document.querySelectorAll('input[type="text"]');
+    const champClavierElem = document.querySelector('#champ-clavier');
 
-    console.log(champsTexteElements);
+    champClavierElem.addEventListener('keydown', (event) => {
+        console.log(`Touche pressée : ${event.key}`);
+    });
 };

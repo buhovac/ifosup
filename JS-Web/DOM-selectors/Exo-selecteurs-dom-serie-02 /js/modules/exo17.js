@@ -1,8 +1,10 @@
-export const execExo07 = () =>
+export const execExo17 = () =>
 {
-    console.log("----- Exo 07 -----");
+    console.log("----- Exo 17 -----");
 
-    const pElements = document.querySelectorAll("p");
+    const champsRequiredHorsMdpElements = document.querySelectorAll(
+        '[required]:not([type="password"])'
+    );
 
-    console.log(pElements);
+    console.log(champsRequiredHorsMdpElements);
 };

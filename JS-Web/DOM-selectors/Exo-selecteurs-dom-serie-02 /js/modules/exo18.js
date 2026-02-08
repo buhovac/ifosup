@@ -1,10 +1,10 @@
-export const execExo08 = () =>
+export const execExo18 = () =>
 {
-    console.log("----- Exo 08 -----");
+    console.log("----- Exo 18 -----");
 
-    const introZonePrincipaleElem = document.querySelector(
-        "main > section#zone-principale > p.js-texte-intro"
+    const deuxPremiersGroupesElements = document.querySelectorAll(
+        "#form-inscription > div:nth-child(-n+2)"
     );
 
-    console.log(introZonePrincipaleElem);
+    console.log(deuxPremiersGroupesElements);
 };

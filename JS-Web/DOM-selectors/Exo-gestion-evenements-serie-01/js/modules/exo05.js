@@ -1,8 +1,15 @@
-export const execExo15 = () =>
-{
-    console.log("----- Exo 15 -----");
+export const execExo05 = () => {
+    console.log('----- Exo 05 -----');
 
-    const champsTermsElements = document.querySelectorAll('input[name$="_terms"]');
+    const boutonsParamElements = document.querySelectorAll('.js-btn-param');
 
-    console.log(champsTermsElements);
+    const saluerUtilisateur = (nom) => {
+        console.log(`Bonjour ${nom} !`);
+    };
+
+    for (const bouton of boutonsParamElements) {
+        bouton.addEventListener('click', () => {
+            saluerUtilisateur(bouton.innerText);
+        });
+    }
 };

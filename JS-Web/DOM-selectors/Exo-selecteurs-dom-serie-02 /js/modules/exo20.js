@@ -1,11 +1,10 @@
-export const execExo10 = () =>
+export const execExo20 = () =>
 {
-    console.log("----- Exo 10 -----");
+    console.log("----- Exo 20 -----");
 
-    const zoneSecondaireElem = document.querySelector("#zone-secondaire");
+    const aPartirDuTroisiemeElements = document.querySelectorAll(
+        "#form-inscription > div:nth-child(n+3)"
+    );
 
-    // :scope znači "ovaj element", pa :scope > p hvata samo direktnu djecu <p>
-    const zoneSecondaireDirectPElements = zoneSecondaireElem.querySelectorAll(":scope > p");
-
-    console.log(zoneSecondaireDirectPElements);
+    console.log(aPartirDuTroisiemeElements);
 };

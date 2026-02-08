@@ -1,9 +1,10 @@
-export const execExo09 = () =>
+export const execExo19 = () =>
 {
-    console.log("----- Exo 09 -----");
+    console.log("----- Exo 19 -----");
 
-    const zonePrincipaleElem = document.querySelector("#zone-principale");
-    const zonePrincipalePElements = zonePrincipaleElem.querySelectorAll("p");
+    const deuxDerniersGroupesElements = document.querySelectorAll(
+        "#form-inscription > div:nth-last-child(-n+2)"
+    );
 
-    console.log(zonePrincipalePElements);
+    console.log(deuxDerniersGroupesElements);
 };

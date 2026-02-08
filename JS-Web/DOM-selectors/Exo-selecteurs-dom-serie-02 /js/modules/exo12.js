@@ -1,8 +1,10 @@
-export function execExo02()
+export const execExo12 = () =>
 {
-    console.log("----- Exo 02 -----");
+    console.log("----- Exo 12 -----");
 
-    const blocsInfoElems = document.querySelectorAll(".js-bloc-info");
+    const formElem = document.querySelector("#form-inscription");
+    const champsRequiredElements = formElem.querySelectorAll("[required]");
 
-    console.log(blocsInfoElems);
-}
+    console.log(champsRequiredElements);
+    console.log("length:", champsRequiredElements.length);
+};

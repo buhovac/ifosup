@@ -1,8 +1,8 @@
-export function execExo01()
+export const execExo11 = () =>
 {
-    console.log("----- Exo 01 -----");
+    console.log("----- Exo 11 -----");
 
-    const zonePrincipaleElem1 = document.querySelector("#zone-principale");
+    const formElem = document.querySelector("#form-inscription");
 
-    console.log(zonePrincipaleElem1);
-}
+    console.log(formElem);
+};

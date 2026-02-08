@@ -1,25 +1,14 @@
-import { execExo11 } from "./modules/exo11.js";
-import { execExo12 } from "./modules/exo12.js";
-import { execExo13 } from "./modules/exo13.js";
-import { execExo14 } from "./modules/exo14.js";
-import { execExo15 } from "./modules/exo15.js";
-import { execExo16 } from "./modules/exo16.js";
-import { execExo17 } from "./modules/exo17.js";
-import { execExo18 } from "./modules/exo18.js";
-import { execExo19 } from "./modules/exo19.js";
-import { execExo20 } from "./modules/exo20.js";
-import { execExo21 } from "./modules/exo21.js";
-import { execExo22 } from "./modules/exo22.js";
+import { execExo01 } from "./modules/exo01.js";
+import { execExo02 } from "./modules/exo02.js";
+import { execExo03 } from "./modules/exo03.js";
+import { execExo04 } from "./modules/exo04.js";
+import { execExo05 } from "./modules/exo05.js";
+import { execExo06 } from "./modules/exo06.js";
 
-execExo11();
-execExo12();
-execExo13();
-execExo14();
-execExo15();
-execExo16();
-execExo17();
-execExo18();
-execExo19();
-execExo20();
-execExo21();
-execExo22();
+execExo01();
+execExo02();
+execExo03();
+execExo04();
+execExo05();
+execExo06();
+

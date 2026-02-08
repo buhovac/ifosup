@@ -1,8 +1,8 @@
-export const execExo04 = () =>
+export const execExo14 = () =>
 {
-    console.log("----- Exo 04 -----");
+    console.log("----- Exo 14 -----");
 
-    const blocInfosElem = document.querySelector(".js-bloc-info");
+    const champsUserElements = document.querySelectorAll('input[name^="user_"]');
 
-    console.log(blocInfosElem);
+    console.log(champsUserElements);
 };

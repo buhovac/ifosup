@@ -1,11 +1,8 @@
-export const execExo06 = () =>
+export const execExo16 = () =>
 {
-    console.log("----- Exo 06 -----");
+    console.log("----- Exo 16 -----");
 
-    const blocInfosElements = document.querySelectorAll(".js-bloc-info");
+    const groupesChampsElements = document.querySelectorAll('div[class*="group"]');
 
-    for (const elem of blocInfosElements)
-    {
-        console.log(elem);
-    }
+    console.log(groupesChampsElements);
 };

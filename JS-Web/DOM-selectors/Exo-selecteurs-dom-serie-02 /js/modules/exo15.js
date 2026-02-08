@@ -1,9 +1,8 @@
-export const execExo05 = () =>
+export const execExo15 = () =>
 {
-    console.log("----- Exo 05 -----");
+    console.log("----- Exo 15 -----");
 
-    const blocInfosElements = document.querySelectorAll(".js-bloc-info");
+    const champsTermsElements = document.querySelectorAll('input[name$="_terms"]');
 
-    console.log(blocInfosElements);
-    console.log("Nombre d'éléments trouvés :", blocInfosElements.length);
+    console.log(champsTermsElements);
 };

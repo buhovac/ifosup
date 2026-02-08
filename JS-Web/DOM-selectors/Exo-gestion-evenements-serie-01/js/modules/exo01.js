@@ -1,8 +1,9 @@
-export const execExo11 = () =>
-{
-    console.log("----- Exo 11 -----");
+export function execExo01() {
+    console.log('----- Exo 01 -----');
 
-    const formElem = document.querySelector("#form-inscription");
+    const boutonClicElem = document.querySelector('#btn-clic');
 
-    console.log(formElem);
-};
+    boutonClicElem.addEventListener('click', () => {
+        console.log('Clic détecté !');
+    });
+}

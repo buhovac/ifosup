@@ -1,8 +1,10 @@
-export const execExo14 = () =>
-{
-    console.log("----- Exo 14 -----");
+export const execExo04 = () => {
+    console.log('----- Exo 04 -----');
 
-    const champsUserElements = document.querySelectorAll('input[name^="user_"]');
+    const lienInterditElem = document.querySelector('#lien-interdit');
 
-    console.log(champsUserElements);
+    lienInterditElem.addEventListener('click', (event) => {
+        event.preventDefault();
+        console.log('Navigation bloquée (preventDefault) !');
+    });
 };

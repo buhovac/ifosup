@@ -1,10 +1,11 @@
-export const execExo12 = () =>
-{
-    console.log("----- Exo 12 -----");
+export const execExo02 = () => {
+    console.log('----- Exo 02 -----');
 
-    const formElem = document.querySelector("#form-inscription");
-    const champsRequiredElements = formElem.querySelectorAll("[required]");
+    const zoneSourisElem = document.querySelector('#zone-souris');
 
-    console.log(champsRequiredElements);
-    console.log("length:", champsRequiredElements.length);
+    zoneSourisElem.addEventListener('mousemove', (event) => {
+        const x = event.clientX;
+        const y = event.clientY;
+        console.log(`Position X: ${x}, Position Y: ${y}`);
+    });
 };
